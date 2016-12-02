@@ -1,0 +1,37 @@
+.normal {
+  align-items: stretch;
+  border: 1px solid #00f;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 1em;
+  padding: 1em;
+  width: 100%;
+}
+
+.normal:hover {
+  background-color: #00f;
+  color: #fff;
+}
+
+.normal:hover svg {
+  fill: #fff;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+
+.content {
+  flex: 1;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.normal h2 {
+  font-size: 1.3em;
+  font-weight: bold;
+}

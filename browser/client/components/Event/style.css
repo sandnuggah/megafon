@@ -1,0 +1,33 @@
+.normal {
+  align-items: stretch;
+  border: 1px solid #0000ff;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 1em;
+  padding: 1em;
+  width: 100%;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+
+.content {
+  flex: 1;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.normal h2 {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 0;
+}
+
+.normal time {
+  font-size: 0.76em;
+}

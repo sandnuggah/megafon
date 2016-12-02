@@ -1,0 +1,29 @@
+version: "2"
+
+services:
+  nginx:
+    container_name: "megafon-nginx"
+    build: ./nginx
+    ports:
+      - "5000:80"
+    links:
+      - api
+      - browser
+
+  api:
+    container_name: "megafon-api"
+    build: ./api
+    ports:
+     - "5000"
+    volumes:
+      - ./api:/usr/src/api
+    command: supervisor -w src,package.json,config.js,index.js index.js
+
+  browser:
+    container_name: "megafon-browser"
+    build: ./browser
+    ports:
+      - "5000"
+    volumes:
+      - ./browser:/usr/src/browser
+    command: npm start
