@@ -2,4 +2,5 @@ pipeline:
   frontend:
     image: node:6.5.0
     commands:
+      - cd browser
       - npm test
